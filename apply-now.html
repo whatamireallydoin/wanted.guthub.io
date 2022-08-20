@@ -2,6 +2,13 @@
   <head>
     <title>Wanted!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
   <body>
     <style>
@@ -13,6 +20,10 @@
       @font-face {
         font-family: "avenir";
         src: url(AvenirLTStd-Book.otf) format("opentype");
+      }
+      @font-face {
+        font-family: "avenir-bold";
+        src: url(AvenirLTStd-Black.otf) format("opentype");
       }
       input[type=text]{
       	width: 400px;
@@ -34,12 +45,14 @@
       h3 {
         font-family: "alpha";
         font-weight: bold;
-        line-height: 1.5em;
+        line-height: 1.3em;
       }
      p {
-        font-family: "avenir";
+        font-family: "avenir-bold";
         line-height: 2.5em;
         line-height: 2em;
+        font-weight: bold;
+        font-style: italic;
       }
 
       label {
@@ -62,11 +75,12 @@ box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.49);
     </style>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 "></div>
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs "></div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3 text-justify">
         	<br><br>
           <h3 style="color: #000;">Truth and truth only. No judgement here. </h3>
-          <br>
+          <p> by the way if you are below 38 year old please don't bother.</p>
+        
           <hr>
           <br>
           <p>
@@ -74,31 +88,34 @@ box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.49);
             <label> 1. What do people call you? <br>
               <input type="text" name="name">
             </label><br><br>
-            <label> 2. What’s your relationship status currently? <br>
+             <label> 2. How old do you think you are? <br>
+              <input type="text" name="age">
+            </label><br><br>
+            <label> 3. What’s your relationship status currently? <br>
             	<input type="text" name="relationship">
             </label><br><br>
-            <label> 3. Did you read the whole ad? <br>
+            <label> 4. Did you read the whole ad? <br>
             	<input type="text" name="read_ad">
             </label><br><br>
-            <label> 4. Give me a glimpse into a regular day of yours<br>
+            <label> 5. Give me a glimpse into a regular day of yours<br>
              <input type="text" name="glimpse_day">
             </label><br><br>
-            <label> 5. Imagine we met. Describe our first date. <br>
+            <label> 6. Imagine we met. Describe our first date. <br>
             	<input type="text" name="first_date">
             </label><br><br>
-            <label> 6. Rank these in the order you think they stand, in a relationship - Compatibility, sex, values, income, future goals <br>
+            <label> 7. Rank these in the order you think they stand, in a relationship - Compatibility, sex, values, income, future goals <br>
             	<input type="text" name="ranking">
             </label><br><br>
-            <label> 7. I’ve called myself X. What do you imagine my name to be, assuming it really started with an A and not an X?<br>
+            <label> 8. I’ve called myself X. What do you imagine my name to be, assuming it really started with an A and not an X?<br>
              <input type="text" name="name_guess">
             </label><br><br>
-            <label> 8. Let’s say we meet. We have a really good date. And we get together. One day, we have a fight. What do you think that fight will be about?<br>
+            <label> 9. Let’s say we meet. We have a really good date. And we get together. One day, we have a fight. What do you think that fight will be about?<br>
              <input type="text" name="fight_reason">
             </label><br><br>
-            <label> 9. Attach something you’ve written. It could be anything. A poem, a story, a blog, an Instagram post, doesn’t matter<br>
+            <label> 10. Attach something you’ve written. It could be anything. A poem, a story, a blog, an Instagram post, doesn’t matter<br>
              <input type="text" name="written_sample">
             </label><br><br>
-            <label> 10. Paste your LinkedIn link here<br> <input type="text" name="linkedin_link">
+            <label> 11. Paste your LinkedIn link here<br> <input type="text" name="linkedin_link">
             </label><br><br>
        
             <button type="submit" class="btn btn_special">Submit</button>
@@ -109,7 +126,7 @@ box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.49);
            <br><br> If you’re also fed up of the people you meet on dating apps, and if you’d like a profile written like the way I’ve written this ad, mail me at hello@whatamithink.in
        </p>
         </div>
-      </div>
-    </div>
+
+
   </body>
 </html>
